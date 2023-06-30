@@ -481,22 +481,25 @@ export default function SongList() {
       title: "Titanium",
       artist: "David Guetta feat. Sia"
     },
-    {
-      img_url: "",
-      title: "",
-      artist: ""
-    },
-    {
-      img_url: "",
-      title: "",
-      artist: ""
-    },
-    {
-      img_url: "",
-      title: "",
-      artist: ""
-    },
   ];
+
+  let emptyArr = [
+    {
+      img_url: "",
+      title: "",
+      artist: ""
+    },
+    {
+      img_url: "",
+      title: "",
+      artist: ""
+    },
+    {
+      img_url: "",
+      title: "",
+      artist: ""
+    },
+  ]
 
 
 
