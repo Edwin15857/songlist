@@ -271,6 +271,11 @@ export default function SongList() {
       artist: "曾比特"
     },
     {
+      img_url: "https://i.scdn.co/image/ab67616d0000b273b79d17e42a1a3bb1fb525976",
+      title: "你还要我怎样",
+      artist: "薛之谦"
+    },
+    {
       img_url: "https://i.scdn.co/image/ab67616d00001e0211a2cf9260354dd4e539e3b7",
       title: "那里都是你",
       artist: "队长"
@@ -467,14 +472,14 @@ export default function SongList() {
       artist: "告五人"
     },
     {
-      img_url: "",
-      title: "",
-      artist: ""
+      img_url: "https://i1.sndcdn.com/artworks-LP9QCIBfurUTHXq3-J8XMKQ-t500x500.jpg",
+      title: "HEARTBREAK ANNIVESARY",
+      artist: "Giveon"
     },
     {
-      img_url: "",
-      title: "",
-      artist: ""
+      img_url: "https://i.scdn.co/image/ab67616d0000b273a197a2ef3ad6704d1f44aa4e",
+      title: "Titanium",
+      artist: "David Guetta feat. Sia"
     },
     {
       img_url: "",
@@ -497,10 +502,10 @@ export default function SongList() {
 
   return (
     <main className='text-center'>
-      <section className='md:h-[1200px] lg:h-[1200px] bg-rose-500'>
+      <section className='h-screen bg-rose-500 overflow-auto'>
         <h1 className='text-5xl font-bold p-10 text-purple-400'>憨憨温 · 抒情 [LOVE]</h1>
-        <div className='text-xl m-10 text-white flex flex-wrap justify-center gap-4'>{loveSongs.map((song, index) => (
-          <div key={index} className='bg-gray-400 rounded p-4'>
+        <div className='text-xl  text-white flex flex-wrap justify-center gap-4'>{loveSongs.map((song, index) => (
+          <div key={index} className='bg-gray-400 rounded p-4 mb-4'>
             <img src={song.img_url} alt={song.title} className="w-full h-32 object-cover mb-4" />
             <h2 className="text-lg font-bold mb-2">{song.title}</h2>
             <p className="text-sm text-gray-800">{song.artist}</p>
@@ -508,10 +513,10 @@ export default function SongList() {
         ))}</div>
 
       </section>
-      <section className='h-[800px] bg-red-400'>
+      <section className='h-screen bg-red-400 overflow-auto'>
         <h1 className='text-5xl font-bold p-10 text-emerald-400'>憨憨温 · 饶舌 [RAP]</h1>
-        <div className='text-xl m-10 text-white flex flex-wrap justify-center gap-4'>{rapSongs.map((song, index) => (
-          <div key={index} className='bg-gray-400 rounded p-4'>
+        <div className='text-xl text-white flex flex-wrap justify-center gap-4'>{rapSongs.map((song, index) => (
+          <div key={index} className='bg-gray-400 rounded p-4 mb-4'>
             <img src={song.img_url} alt={song.title} className="w-full h-32 object-cover mb-4" />
             <h2 className="text-lg font-bold mb-2">{song.title}</h2>
             <p className="text-sm text-gray-800">{song.artist}</p>
@@ -519,10 +524,10 @@ export default function SongList() {
         ))}</div>
 
       </section>
-      <section className='h-[1600px] bg-blue-600'>
+      <section className='h-screen bg-blue-600 overflow-auto [&::-webkit-scrollbar]:hidden'>
         <h1 className='text-5xl font-bold p-10 text-blue-300'>憨憨温 · 悲歌 [SAD]</h1>
-        <div className='text-xl m-10 text-white flex flex-wrap justify-center gap-4'>{sadSongs.map((song, index) => (
-          <div key={index} className='bg-gray-400 rounded p-4'>
+        <div className='text-xl text-white flex flex-wrap justify-center gap-4'>{sadSongs.map((song, index) => (
+          <div key={index} className='bg-gray-400 rounded p-4 mb-4'>
             <img src={song.img_url} alt={song.title} className="w-full h-32 object-cover mb-4" />
             <h2 className="text-lg font-bold mb-2">{song.title}</h2>
             <p className="text-sm text-gray-800">{song.artist}</p>
@@ -530,10 +535,10 @@ export default function SongList() {
         ))}</div>
       </section>
 
-      <section className='h-screen bg-pink-600'>
+      <section className='h-screen bg-pink-600 overflow-auto'>
         <h1 className='text-5xl font-bold p-10 text-lime-400'>憨憨温 · 嗨歌 [CLUB]</h1>
         <div className='text-xl m-10 text-white flex flex-wrap justify-center gap-4'>{highSongs.map((song, index) => (
-          <div key={index} className='bg-gray-400 rounded p-4'>
+          <div key={index} className='bg-gray-400 rounded p-4 mb-4'>
             <img src={song.img_url} alt={song.title} className="w-full h-32 object-cover mb-4" />
             <h2 className="text-lg font-bold mb-2">{song.title}</h2>
             <p className="text-sm text-gray-800">{song.artist}</p>
