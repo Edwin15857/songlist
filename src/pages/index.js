@@ -68,11 +68,6 @@ export default function SongList() {
       artist: "邓紫棋"
     },
     {
-      img_url: "https://i.scdn.co/image/ab67616d00001e02bb8936ae79875a61b65934e8",
-      title: "三个字 I Love You",
-      artist: "凌加峻"
-    },
-    {
       img_url: "https://i.scdn.co/image/ab67616d0000b273f0c201510f193c7c86b69ab3",
       title: "想自由",
       artist: "林宥嘉"
@@ -279,6 +274,11 @@ export default function SongList() {
       img_url: "https://i.scdn.co/image/ab67616d00001e0211a2cf9260354dd4e539e3b7",
       title: "那里都是你",
       artist: "队长"
+    },
+    {
+      img_url: "https://i.scdn.co/image/ab67616d00001e02bb8936ae79875a61b65934e8",
+      title: "三个字 I Love You",
+      artist: "凌加峻"
     },
     {
       img_url: "https://m.media-amazon.com/images/M/MV5BYTRkNGMzMjgtY2MwZC00M2E1LTg5NTktYmUwNDg0NDM3YmUyXkEyXkFqcGdeQXVyMTI4Nzg5MDA@._V1_.jpg",
