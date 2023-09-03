@@ -1,5 +1,5 @@
 import React from 'react'
-import SongCard from './songcard.js'
+import SongCard from './songcard'
 import SearchIcon from '../../public/search.svg'
 
 
