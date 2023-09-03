@@ -1,4 +1,5 @@
 import React from 'react'
+import { Search } from '@/Components/search';
 
 export default function SongList() {
   let sadSongs = [
@@ -442,6 +443,11 @@ export default function SongList() {
       artist: "Ed Sheeran"
     },
     {
+      img_url: "https://i.scdn.co/image/ab67616d0000b27341e31d6ea1d493dd77933ee5",
+      title: "STAY",
+      artist: "Justin Bieber"
+    },
+    {
       img_url: "https://i.pinimg.com/564x/7c/ba/10/7cba10935c8e0d39e06e59f8fb2f66f7.jpg",
       title: "Something Just Like This",
       artist: "Coldplay"
@@ -502,51 +508,26 @@ export default function SongList() {
   ]
 
 
-
   return (
     <main className='text-center'>
       <section className='h-full bg-rose-500 overflow-auto'>
         <h1 className='text-5xl font-bold p-10 text-purple-400'>憨憨温 · 抒情 [LOVE]</h1>
-        <div className='text-xl  text-white flex flex-wrap justify-center gap-4 ml-4 mr-4 mb-10'>{loveSongs.map((song, index) => (
-          <div key={index} className='bg-gray-400 rounded p-4'>
-            <img src={song.img_url} alt={song.title} className="w-full h-32 object-cover mb-4" />
-            <h2 className="text-lg font-bold mb-2">{song.title}</h2>
-            <p className="text-sm text-gray-800">{song.artist}</p>
-          </div>
-        ))}</div>
+        <Search list={loveSongs} />
 
       </section>
       <section className='h-full bg-red-400 overflow-auto'>
         <h1 className='text-5xl font-bold p-10 text-emerald-400'>憨憨温 · 饶舌 [RAP]</h1>
-        <div className='text-xl text-white flex flex-wrap justify-center gap-4 ml-4 mr-4 mb-10'>{rapSongs.map((song, index) => (
-          <div key={index} className='bg-gray-400 rounded p-4'>
-            <img src={song.img_url} alt={song.title} className="w-full h-32 object-cover mb-4" />
-            <h2 className="text-lg font-bold mb-2">{song.title}</h2>
-            <p className="text-sm text-gray-800">{song.artist}</p>
-          </div>
-        ))}</div>
+        <Search list={rapSongs} />
 
       </section>
       <section className='h-full bg-blue-600 overflow-auto'>
         <h1 className='text-5xl font-bold p-10 text-blue-300'>憨憨温 · 悲歌 [SAD]</h1>
-        <div className='text-xl text-white flex flex-wrap justify-center gap-4 ml-4 mr-4 mb-10'>{sadSongs.map((song, index) => (
-          <div key={index} className='bg-gray-400 rounded p-4'>
-            <img src={song.img_url} alt={song.title} className="w-full h-32 object-cover mb-4" />
-            <h2 className="text-lg font-bold mb-2">{song.title}</h2>
-            <p className="text-sm text-gray-800">{song.artist}</p>
-          </div>
-        ))}</div>
+        <Search list={sadSongs} />
       </section>
 
       <section className='h-full bg-pink-600 overflow-auto'>
         <h1 className='text-5xl font-bold p-10 text-lime-400'>憨憨温 · 嗨歌 [CLUB]</h1>
-        <div className='text-xl m-10 text-white flex flex-wrap justify-center gap-4 ml-4 mr-4 mb-10'>{highSongs.map((song, index) => (
-          <div key={index} className='bg-gray-400 rounded p-4'>
-            <img src={song.img_url} alt={song.title} className="w-full h-32 object-cover mb-4" />
-            <h2 className="text-lg font-bold mb-2">{song.title}</h2>
-            <p className="text-sm text-gray-800">{song.artist}</p>
-          </div>
-        ))}</div>
+        <Search list={highSongs} />
       </section>
     </main>
   )
