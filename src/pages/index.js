@@ -1,5 +1,5 @@
 import React from 'react'
-import { Search } from '@/Components/search';
+import { Search } from '../Components/search';
 
 export default function SongList() {
   let sadSongs = [
