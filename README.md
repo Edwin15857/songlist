@@ -22,8 +22,8 @@ This website is built as a songlist website so that you could search for your ow
 
 ### To-do List
   
-  [ ] I could possibly add lyrics modal to each song cards on click.
+- [ ] I could possibly add lyrics modal to each song cards on click.
   
-  [ ] I could possibly add autocomplete to the search bar.
+- [ ] I could possibly add autocomplete to the search bar.
 
-  [ ] I could possibly make the search bar global, instead of having a bunch of genre-specific search bar; The Search bar should always stick to the top for desktop users, while only show a search icon at the top right corner for mobile users.
+- [ ] I could possibly make the search bar global, instead of having a bunch of genre-specific search bar; The Search bar should always stick to the top for desktop users, while only show a search icon at the top right corner for mobile users.
